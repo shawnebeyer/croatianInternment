@@ -1,0 +1,54 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			font-family: $lato;
+			// text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 100;
+			padding: 10px;
+			&:hover {
+				color: $darkBlue;
+			}
+		}
+	}
+}
+
+.navContainer {
+	background: $darkBlue;
+	height: 45px;
+	// position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	@include flexboxRow;
+	@include justifyContentSpaceBetween;
+	padding: 0 20px;
+	.navLogo, .mainNav, .navSocial {
+		@include flexboxRow;
+		@include alignItemsCenter;
+		p {
+			font-size: 16px;
+		}
+	}
+	.navSocial a {
+		margin-left: 10px;
+	}
+	.mainNav {
+		@include flexboxRow;
+		ul {
+			@include flexboxRow;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.fixedNavContainer {
+	position: fixed;
+	top: 0;
+}

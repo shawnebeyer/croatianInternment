@@ -1,0 +1,186 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #333;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+}
+
+.donateContainer, .storyContainer {
+	padding-top: 45px;
+}
+
+.full {
+	width: 100%;
+}
+
+main {
+	@include flexboxColumn;
+}
+
+header {
+	// background: green;
+}
+
+.button {
+	padding: 15px 20px;
+	background: $blueOne;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: $openSans;
+	letter-spacing: 1px;
+}
+
+/*
+====================================
+Home Styling
+====================================
+*/
+.homeContainer {
+	// @include flexboxColumn;
+	.homeMain {
+		height: 100vh;
+		@include flexboxColumn;
+		// position: relative;
+		.homeHeader {
+			height: 33vh;
+			// background: blue;
+			background: 50% 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			// max-width: 100%;
+			// position: relative;
+			// background-position: 50%;
+		}
+		.homeMainContent {
+			// background: grey;
+			flex: 1;
+			background: 50% 100% fixed;
+			@include flexboxColumn;
+			@include alignItemsCenter;
+			@include alignContentCenter;
+			@include justifyContentCenter;
+			background-size: cover;
+			background-repeat: no-repeat;
+			// background-position: fixed;
+			.wrapper {
+				// @include flexboxColumn;
+				// @include alignItemsCenter;
+				// @include alignContentCenter;
+				// @include justifyContentCenter;
+				// height: 100%;
+				.homeQuote {
+					// background: rgba(0, 0, 0, 0.4);
+					padding: 10px;
+					p {
+						font-size: 18px;
+						color: $white;
+						// color: $blueTwo;
+					}
+				}
+			}
+		}
+	}
+}
+
+section.important, section.pioneers {
+	// padding: 100px 0;
+}
+
+.pioneers {
+	height: 100vh;
+	background: $blueOne;
+	.content {
+		// background: green;
+		// margin: 0 auto;
+	}
+	h2, h3, p {
+		color: $white;
+	}
+	p {
+		letter-spacing: 1px;
+		font-size: 20px;
+	}
+}
+
+.pioneers, .important {
+	@include flexboxColumn;
+	@include alignContentCenter;
+	@include alignItemsCenter;
+	@include justifyContentCenter;
+}
+
+.pioneersText, .pioneerUncover, .importantText {
+	padding: 25px 0;
+}
+
+.pioneerPhoto {
+	height: 600px;
+	// background: $blueFour;
+	background: 50% 100% fixed;
+	background-size: cover;
+}
+
+.important {
+	height: 100vh;
+	background: $blueThree;
+}
+
+/*
+====================================
+DonateSupporters Styling
+====================================
+*/
+
+
+.makeDonation, .contribute, .supporters {
+	height: 100vh;
+	@include flexboxColumn
+}
+
+.donationsPhoto, .supportersPhoto {
+	height: 600px;
+	background: 50% 100% fixed;
+	background-size: cover;
+}
+
+/*
+====================================
+Story Styling
+====================================
+*/
+
+

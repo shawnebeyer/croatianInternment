@@ -1,0 +1,102 @@
+@mixin flexboxRow {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	-ms-flex-direction: row;
+	    flex-direction: row;
+	// -webkit-flex-wrap: wrap;
+	//     -ms-flex-wrap: wrap;
+	//         flex-wrap: wrap;
+}
+
+@mixin flexboxColumn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+@mixin justifyContentCenter {
+   -webkit-box-pack: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+}
+
+@mixin justifyContentSpaceBetween {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+@mixin justifyContentSpaceAround {
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+@mixin justifyContentFlexStart {
+	-webkit-box-pack: start;  
+	-webkit-justify-content: flex-start;  
+	-ms-flex-pack: start;  
+	justify-content: flex-start;
+}
+
+@mixin justifyContentFlexEnd {
+	-webkit-box-pack: end;  
+	-webkit-justify-content: flex-end;  
+	-ms-flex-pack: end;  
+	justify-content: flex-end;
+}
+
+@mixin alignContentCenter {
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+@mixin alignItemsCenter {
+ -webkit-box-align: center;
+ -webkit-align-items: center;
+     -ms-flex-align: center;
+         align-items: center;
+}
+
+@mixin alignItemsStretch {
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+
+@mixin alignItemsFlexStart {
+	-webkit-box-align: start; 
+	-webkit-align-items: flex-start; 
+	-ms-flex-align: start; 
+	align-items: flex-start;
+}
+
+@mixin alignContentStretch {
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+
+@mixin flexWrapWrap {
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+@mixin transition {
+	transition: all 0.5s;
+}
