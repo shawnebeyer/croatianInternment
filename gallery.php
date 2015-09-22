@@ -26,15 +26,19 @@
  $images = get_field('images');
 
  if( $images ): ?>
+ <div class="grid">
      <ul>
          <?php foreach( $images as $image ): ?>
+          <div class="grid-item">
              <li>
                  <a href="<?php echo $image['url']; ?>">
-                      <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                      <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
                  </a>
                  <p><?php echo $image['caption']; ?></p>
              </li>
+            </div>
          <?php endforeach; ?>
      </ul>
+</div>
  <?php endif; ?>
  <?php get_footer(); ?>

@@ -15,6 +15,7 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 /*
 ====================================
 Default Styling
@@ -122,7 +123,7 @@ section.important, section.pioneers {
 
 .pioneers {
 	height: 100vh;
-	background: $blueOne;
+	background: $blueTwo;
 	.content {
 		// background: green;
 		// margin: 0 auto;
@@ -184,3 +185,35 @@ Story Styling
 */
 
 
+
+/*
+====================================
+Gallery Styling
+====================================
+*/
+
+.grid {
+	// background: green;
+	width: 80%;
+	margin: 0 auto;
+	ul {
+		list-style: none;
+		li {
+			padding: 0;
+		}
+	}
+}
+
+.grid-sizer, .grid-item {
+	width: 32%;
+	margin: 0.5%;
+}
+
+.grid-item {
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	width: 100%;
+}
