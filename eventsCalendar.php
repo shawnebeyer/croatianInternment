@@ -1,5 +1,5 @@
 <?php /*
-  Template Name: Events
+  Template Name: EventsCalendar
 */ 
  ?>
  <?php get_header(); ?>
