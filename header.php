@@ -9,7 +9,7 @@
 
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|Lato:400,100,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|Lato:300,400,100,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <?php wp_head(); ?>
 </head>

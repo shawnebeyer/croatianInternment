@@ -34,14 +34,15 @@
 	<section id="pioneers" class="pioneers">
 		<div class="content">
 			<div class="wrapper">
-				<h2>An Injustice to our Pioneers</h2>
+				<h2><span class="underline">An Injustice to our Pioneers</span></h2>
 				<article class="pioneersText">
 					<p><?php the_field('pioneers_main_text'); ?></p>
 				</article>
-				<h3>How could this have happened?</h3>
+				<h3><span class="underline">How could this have happened?</span></h3>
 				<article class="pioneerUncover">
 					<p><?php the_field('pioneers_uncover'); ?></p>
 				</article>
+				<a href="#"><i class="fa fa-arrow-circle-o-down fa-2x"></i></a>
 			</div>
 		</div>
 	</section>
@@ -49,7 +50,7 @@
 	</section>
 	<section id="important" class="important">
 		<div class="wrapper">
-			<h2>Why is this Project Important?</h2>
+			<h2><span class="underline">Why is this Project Important?</span></h2>
 			<article class="importantText">
 				<p><?php the_field('why_is_this_project_important'); ?></p>
 			</article>
