@@ -16,7 +16,7 @@
 		</div>
 		<header id="navContainer" class="navContainer">
 			<div class="navLogo">
-				<p><i class="fa fa-phone"></i> 416 555 1212</p>
+				<p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p>
 			</div>
 			<nav class="mainNav">
 				<?php wp_nav_menu( array(
