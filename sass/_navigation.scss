@@ -4,17 +4,23 @@ ul.menu {
 	li {
 		display: inline;
 		margin-right: 10px;
+		padding: 10px;
 		a {
 			font-family: $lato;
 			color: $offWhite;
 			// text-transform: uppercase;
-			letter-spacing: 1px;
+			letter-spacing: 2px;
 			font-weight: 300;
-			padding: 10px;
-			// border-bottom: 1px solid $darkBlue;
+			padding: 2px 0;
+			// padding-left: 4px;
+			border-top: 4px solid $darkBlue;
+			// border-bottom: 4px solid $darkBlue;
+			// border-left: 3px solid $darkBlue;
 			&:hover {
-				// border-bottom: 1px solid $white;
-				color: $white;
+				// border-left: 3px solid $darkGrey;
+				border-top: 4px solid $darkGrey;
+				// border-bottom: 4px solid $darkGrey;
+				// color: $darkGrey;
 			}
 		}
 	}
@@ -43,7 +49,15 @@ ul.menu {
 		}
 	}
 	.navSocial a {
-		margin-left: 15px;
+		margin-left: 10px;
+		padding: 6px 10px;
+		background: $darkBlue;
+		border-radius: 5px;
+		&:hover {
+			background: $darkGrey;
+			border-radius: 5px;
+			color: $offWhite;
+		}
 	}
 	.mainNav {
 		@include flexboxRow;
