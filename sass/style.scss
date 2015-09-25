@@ -94,7 +94,7 @@ Home Styling
 		@include flexboxColumn;
 		// position: relative;
 		.homeHeader {
-			height: 33vh;
+			height: 25vh;
 			// background: blue;
 			background: 50% 100%;
 			background-size: contain;
@@ -265,6 +265,65 @@ DonateSupporters Styling
 	height: 600px;
 	background: 50% 100% fixed;
 	background-size: cover;
+}
+
+.makeDonation {
+	@include flexboxColumn;
+	// @include alignContentCenter;
+	@include alignItemsCenter;
+	@include justifyContentCenter;
+	.content {
+		// background: blue;
+		max-width: 90%;
+		.wrapper {
+			@include flexboxColumn;
+			@include alignItemsCenter;
+			h2 {
+				color: $darkBlue;
+			}
+			p {
+				color: $darkGrey;
+				font-weight: 300;
+				padding: 50px 0;
+				line-height: 2;
+				// letter-spacing:
+			}
+			.button {
+				&:hover {
+					background: $darkGrey;
+					color: $white;
+				}
+			}
+			.arrow {
+				color: $silver;
+				&:hover {
+					color: $darkBlue;
+				}
+			}
+		}
+	}
+}
+
+.contribute {
+	@include flexboxColumn;
+	@include alignContentCenter;
+	@include alignItemsCenter;
+	@include justifyContentCenter;
+	background: $darkGrey;
+	.wrapper {
+		@include flexboxColumn;
+		@include alignItemsCenter;
+		.contributeContainer {
+			@include flexboxColumn;
+			// @include alignContentCenter;
+			// @include alignItemsCenter;
+			// @include justifyContentCenter;
+			// background: blue;
+			h2, p {
+				// color: $d
+			}
+		}
+	}
 }
 
 /*

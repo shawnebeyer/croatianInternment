@@ -21,10 +21,13 @@
 </header>
 <main class="container donateContainer">
 	<section id="makeDonation" class="makeDonation">
-		<div class="wrapper">
-			<h2>Make a Donation</h2>
-			<h3><a href="" class="button">Help us tell their story</a></h3>
-			<p><?php the_field('donation_text'); ?></p>
+		<div class="content">
+			<div class="wrapper">
+				<h2><span class="underline">Make a Donation</span></h2>
+				<h3><a href="" class="button">Help us tell their story</a></h3>
+				<p><?php the_field('donation_text'); ?></p>
+				<a href="#" class="arrow"><i class="fa fa-arrow-circle-o-down fa-3x"></i></a>
+			</div>
 		</div>
 	</section>
 	<section id="donationsPhoto" class="donationsPhoto" style="background-image: url('<?php the_field('donate_parallax_photo'); ?>'); ">
@@ -33,7 +36,7 @@
 	<section id="contribute" class="contribute">
 		<div class="wrapper">
 			<section class="container contributeContainer">
-				<h2>Who can contribute?</h2>
+				<h2><span class="underline">Who can contribute?</span></h2>
 				<p>Donations to the project can be made within the following categories:</p>
 				<div class="typesOfContributors">
 					<p><?php the_field('friend_title'); ?></p>

@@ -42,7 +42,7 @@
 				<article class="pioneerUncover">
 					<p><?php the_field('pioneers_uncover'); ?></p>
 				</article>
-				<a href="#"><i class="fa fa-arrow-circle-o-down fa-2x"></i></a>
+				<a href="#"><i class="fa fa-arrow-circle-o-down fa-3x"></i></a>
 			</div>
 		</div>
 	</section>
