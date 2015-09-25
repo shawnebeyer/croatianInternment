@@ -342,39 +342,58 @@ DonateSupporters Styling
 }
 
 .contributeInnerContainer {
-	background: green;
+	// background: green;
 	margin-top: 55px;
 	min-width: 100%;
 	.typesOfContributersTitle {
-		background: $blueOne;
+		// background: $blueOne;
 		padding: 20px;
+		margin-bottom: 10px;
+		p {
+			font-weight: 300;
+			letter-spacing: 1px;
+			font-size: 18px;
+			text-transform: uppercase;
+
+		}
 	}
 	.typesOfContributors {
-		background: $blueTwo;
+		// background: $blueTwo;
 		p {
 			color: $darkGrey;
+			font-weight: 300;
 		}
 		.contributer {
 			padding: 10px;
+			margin: 10px 0;
 		}
 		.contributerFriend {
 			background: $silver;
 		}
 		.contributerGuarantor {
-			background: $white;
+			background: $silver;
 		}
 		.contributerGuardian {
 			background: $silver;
 		}
 		.contributerBenefactor {
-			background: $white;
+			background: $silver;
 		}
 	}
 }
 
 .supporters {
-	h2 {
+	h2, p {
 		color: $darkBlue;
+	}
+	p {
+		font-weight: 300;
+	}
+	.button {
+		&:hover {
+			color: $white;
+			background: $darkGrey;
+		}
 	}
 }
 

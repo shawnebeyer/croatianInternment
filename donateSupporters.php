@@ -69,8 +69,11 @@
 	</section>
 	<section id="supporters" class="supporters">
 		<div class="wrapper">
-			<h2>Our Supporters</h2>
+			<h2><span class="underline">Our Supporters</span></h2>
 			<section class="container supportersContainer">
+				<div class="supportersTitle">
+					<p>Our Supporters and Donors</p>
+				</div>
 				<?php while( has_sub_field('supporters') ): ?>
 				    <p><?php the_sub_field('supporters_name'); ?></p>
 				<?php endwhile; ?>
