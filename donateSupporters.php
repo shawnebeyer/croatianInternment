@@ -42,14 +42,22 @@
 						<p>Donations to the project can be made within the following categories:</p>
 					</div>
 					<div class="typesOfContributors">
-						<p><?php the_field('friend_title'); ?></p>
-						<p><?php the_field('friend_sub_fields'); ?></p>
-						<p><?php the_field('guarantor_title'); ?></p>
-						<p><?php the_field('guarantor_sub_fields'); ?></p>
-						<p><?php the_field('guardian_title'); ?></p>
-						<p><?php the_field('guardian_sub_fields'); ?></p>
-						<p><?php the_field('benefactor_title'); ?></p>
-						<p><?php the_field('benefactor_sub_fields'); ?></p>
+						<article class="contributer contributerFriend">
+							<p><?php the_field('friend_title'); ?></p>
+							<p><?php the_field('friend_sub_fields'); ?></p>
+						</article>
+						<article class="contributer contributerGuarantor">
+							<p><?php the_field('guarantor_title'); ?></p>
+							<p><?php the_field('guarantor_sub_fields'); ?></p>
+						</article>
+						<article class="contributer contributerGuardian">
+							<p><?php the_field('guardian_title'); ?></p>
+							<p><?php the_field('guardian_sub_fields'); ?></p>
+						</article>
+						<article class="contributer contributerBenefactor">
+							<p><?php the_field('benefactor_title'); ?></p>
+							<p><?php the_field('benefactor_sub_fields'); ?></p>
+						</article>
 					</div>
 				</section>
 				<h3><a href="" class="button">Contribute now</a></h3>

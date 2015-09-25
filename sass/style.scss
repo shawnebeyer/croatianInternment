@@ -42,7 +42,7 @@ body {
 }
 
 .donateContainer, .storyContainer {
-	padding-top: 45px;
+	padding-top: 55px;
 }
 
 .full {
@@ -343,8 +343,32 @@ DonateSupporters Styling
 
 .contributeInnerContainer {
 	background: green;
+	margin-top: 55px;
+	min-width: 100%;
+	.typesOfContributersTitle {
+		background: $blueOne;
+		padding: 20px;
+	}
 	.typesOfContributors {
 		background: $blueTwo;
+		p {
+			color: $darkGrey;
+		}
+		.contributer {
+			padding: 10px;
+		}
+		.contributerFriend {
+			background: $silver;
+		}
+		.contributerGuarantor {
+			background: $white;
+		}
+		.contributerGuardian {
+			background: $silver;
+		}
+		.contributerBenefactor {
+			background: $white;
+		}
 	}
 }
 
