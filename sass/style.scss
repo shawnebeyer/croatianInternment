@@ -267,6 +267,9 @@ DonateSupporters Styling
 	background-size: cover;
 }
 
+.donateContainer {
+}
+
 .makeDonation {
 	@include flexboxColumn;
 	// @include alignContentCenter;
@@ -322,7 +325,32 @@ DonateSupporters Styling
 			h2, p {
 				// color: $d
 			}
+			.button {
+				background: $blueOne;
+				color: $white;
+				&:hover {
+					background: $white;
+					color: $blueOne;
+				}
+			}
 		}
+	}
+}
+
+.contributeInnerContainer, .typesOfContributors {
+	@include flexboxColumn;
+}
+
+.contributeInnerContainer {
+	background: green;
+	.typesOfContributors {
+		background: $blueTwo;
+	}
+}
+
+.supporters {
+	h2 {
+		color: $darkBlue;
 	}
 }
 
