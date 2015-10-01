@@ -87,6 +87,9 @@ header {
 Home Styling
 ====================================
 */
+header {
+	background-color: $darkBlue;
+}
 .homeContainer {
 	// @include flexboxColumn;
 	.homeMain {
@@ -95,7 +98,6 @@ Home Styling
 		// position: relative;
 		.homeHeader {
 			height: 25vh;
-			// background: blue;
 			background: 50% 100%;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -187,11 +189,21 @@ section.important, section.pioneers {
 	// padding-top: 100px;
 }
 
+// .pioneerPhoto {
+// 	height: 600px;
+// 	// background: $blueFour;
+// 	background: 50% 100% fixed;
+// 	background-size: cover;
+// }
+
 .pioneerPhoto {
+	position: relative;
 	height: 600px;
-	// background: $blueFour;
-	background: 50% 100% fixed;
 	background-size: cover;
+	background-position: bottom center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	// background-width: 100%;
 }
 
 .important {
