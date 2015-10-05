@@ -2,4 +2,20 @@ footer {
 	clear: both;
 	background: $darkBlue;
 	height: 80px;
+	// position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	@include flexboxRow;
+	@include justifyContentSpaceBetween;
+	padding: 0 90px;
+	.container {
+		@include flexboxRow;
+		@include justifyContentCenter;
+		@include alignContentCenter;
+		@include alignItemsCenter;
+		p {
+			font-weight: 300;
+		}
+	}
 }

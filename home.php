@@ -14,23 +14,23 @@
 				</article>
 			</div>
 		</div>
-		<header id="navContainer" class="navContainer">
-			<div class="navLogo">
-				<p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p>
-			</div>
-			<nav class="mainNav">
-				<?php wp_nav_menu( array(
-      			'container' => false,
-      			'theme_locations' => 'primary'
-    			)); ?>
-			</nav>
-			<div class="navSocial">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-envelope-o"></i></a>
-				<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
-			</div>
-		</header>
 	</section>
+	<header id="navContainer" class="navContainer">
+		<div class="navLogo">
+			<p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p>
+		</div>
+		<nav class="mainNav">
+			<?php wp_nav_menu( array(
+	     		'container' => false,
+	     		'theme_locations' => 'primary'
+	   		)); ?>
+		</nav>
+		<div class="navSocial">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-envelope-o"></i></a>
+			<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+		</div>
+	</header>
 	<section id="pioneers" class="pioneers">
 		<div class="content">
 			<div class="wrapper">

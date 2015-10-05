@@ -26,7 +26,7 @@
 	</section>
 	<section class="storyTitle">
 		<div class="wrapper">
-			<h2>Tell us your story.</h2>
+			<h2><span class="underline">Tell us your story.</span></h2>
 		</div>
 	</section>
 	<section class="storyContent">
@@ -34,7 +34,7 @@
 			<p><?php the_field('story_text'); ?></p>
 		</div>
 	</section>
-	<h3><a href="" class="button">Support</a></h3>
+	<h3><a href="" class="button">Get in touch</a></h3>
 </main>
 
 <?php get_footer(); ?>

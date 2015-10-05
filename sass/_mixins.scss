@@ -91,6 +91,12 @@
 	        align-items: stretch;
 }
 
+@mixin alignContentFlexStart {
+	  -webkit-align-content: flex-start;
+       -ms-flex-line-pack: start;
+           align-content: flex-start;
+}
+
 @mixin flexWrapWrap {
 	-webkit-flex-wrap: wrap;
 	    -ms-flex-wrap: wrap;

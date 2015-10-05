@@ -93,7 +93,7 @@ header {
 .homeContainer {
 	// @include flexboxColumn;
 	.homeMain {
-		height: 100vh;
+		height: calc(100vh - 55px);
 		@include flexboxColumn;
 		// position: relative;
 		.homeHeader {
@@ -108,7 +108,7 @@ header {
 		.homeMainContent {
 			// background: grey;
 			flex: 1;
-			background: 50% 100% fixed;
+			background: 40% fixed;
 			@include flexboxColumn;
 			@include alignItemsCenter;
 			@include alignContentCenter;
@@ -320,11 +320,14 @@ DonateSupporters Styling
 }
 
 .contribute {
+	background: $darkGrey;
+}
+
+.contribute, .supporters {
 	@include flexboxColumn;
 	@include alignContentCenter;
 	@include alignItemsCenter;
 	@include justifyContentCenter;
-	background: $darkGrey;
 	.wrapper {
 		@include flexboxColumn;
 		@include alignItemsCenter;
@@ -395,6 +398,45 @@ DonateSupporters Styling
 }
 
 .supporters {
+	.wrapper {
+		@include flexboxColumn;
+		min-width: 90%;
+		// background: grey;
+		.supportersContainer {
+			margin-top: 55px;
+			// background: lightblue;
+			@include flexboxColumn;
+
+			.supportersList {
+				// background: lighten($darkBlue, 80);
+				// background: $darkGrey;
+				height: 60vh;
+				width: 100%;
+				@include flexboxColumn;
+				@include flexWrapWrap;
+				// @include alignContentFlexStart;
+				// @include justifyContentCenter;
+				@include alignItemsCenter;
+				padding: 0 30px 30px 30px;
+				p {
+					padding: 7px 20px;
+					font-weight: 700;
+					color: $darkGrey;
+				}
+			}
+		}
+	}
+		.supportersTitle {
+			padding: 20px;
+			margin-bottom: 10px;
+			p {
+				font-weight: 300;
+				letter-spacing: 1px;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+		}
+	
 	h2, p {
 		color: $darkBlue;
 	}
@@ -414,6 +456,37 @@ DonateSupporters Styling
 Story Styling
 ====================================
 */
+
+.storyContainer {
+	@include flexboxColumn;
+	padding-bottom: 50px;
+	.storyPhoto {
+		margin: 0 auto;
+		padding-top: 50px;
+		.storyPicture {
+			width: 100%;
+		}
+	}
+	.storyTitle {
+		h2 {
+			color: $darkGrey;
+		}
+	}
+	.storyContent {
+		margin-top: 55px;
+		p {
+			color: $darkBlue;
+			font-weight: 300;
+			line-height: 2;
+		}
+	}
+	.button {
+		&:hover {
+			background: $darkGrey;
+			color: $white;
+		}
+	}
+}
 
 
 
