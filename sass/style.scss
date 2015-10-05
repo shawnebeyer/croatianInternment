@@ -528,6 +528,47 @@ Contact Styling
 ====================================
 */
 
+.contactContainer {
+	@include flexboxColumn;
+	padding: 55px 0 50px 0;
+	.contactPhoto {
+		margin: 0 auto;
+		padding-top: 50px;
+		.contactPicture {
+			width: 100%;
+		}
+	}
+	.contactTitle {
+		h2 {
+			color: $darkGrey;
+		}
+	}
+	.contactContent {
+		margin-top: 55px;
+		p {
+			color: $darkBlue;
+			font-weight: 300;
+			line-height: 2;
+			.email {
+				color: $darkBlue;
+				margin-left: 2px;
+				padding: 5px 10px;
+				background: lighten($darkBlue, 80);
+				&:hover {
+					color: $white;
+					background: $blueOne;
+				}
+			}
+		}
+	}
+	.button {
+		&:hover {
+			background: $darkGrey;
+			color: $white;
+		}
+	}
+}
+
 /*
 ====================================
 Footer Styling

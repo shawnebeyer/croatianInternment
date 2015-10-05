@@ -33,6 +33,7 @@
  		<div class="wrapper">
  			<p><?php the_field('contact_title'); ?></p>
  			<p><?php the_field('contact_text'); ?></p>
+ 			<p>Email:<span><a class="email" href="mailto:jankac@croatianinternment.com"> <?php the_field('contact_email'); ?></a></span></p>
  		</div>
  	</section>
  	<h3><a href="" class="button">Support</a></h3>
