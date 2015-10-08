@@ -9,6 +9,7 @@ footer {
 	@include flexboxRow;
 	@include justifyContentSpaceBetween;
 	padding: 0 90px;
+	// margin-top: 25px;
 	.container {
 		@include flexboxRow;
 		@include justifyContentCenter;

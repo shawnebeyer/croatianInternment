@@ -19,26 +19,34 @@
   		<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
  	</div>
  </header>
-<p>asas</p>
-<h1>asasasa</h1>
- <?php 
+ <main class="gallery">
+  <h2><span class="underline"> Our Gallery</span></h2>
+  <div class="wrapper galleryWrapper">
+    <div class="featuredImage" style="background-image: url('<?php the_field('main_image'); ?>'); ">
+    </div>
 
- $images = get_field('images');
+     <?php 
 
- if( $images ): ?>
- <div class="grid">
-     <ul>
-         <?php foreach( $images as $image ): ?>
-          <div class="grid-item">
-             <li>
-                 <a href="<?php echo $image['url']; ?>">
-                      <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                 </a>
-                 <p><?php echo $image['caption']; ?></p>
-             </li>
-            </div>
-         <?php endforeach; ?>
-     </ul>
-</div>
- <?php endif; ?>
+     $images = get_field('images');
+
+     if( $images ): ?>
+     <div class="grid">
+         <ul>
+             <?php foreach( $images as $image ): ?>
+              <div class="grid-item">
+                 <li>
+                     <a href="<?php echo $image['url']; ?>">
+                          <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                     </a>
+                     <p><?php echo $image['caption']; ?></p>
+                 </li>
+                </div>
+             <?php endforeach; ?>
+         </ul>
+    </div>
+     <?php endif; ?>
+  </div>
+ </main>
+
+  
  <?php get_footer(); ?>

@@ -259,8 +259,14 @@ Events Styling
 */
 
 .eventsContainer {
-	padding-top: 45px;
+	padding-top: 95px;
 	background: $white;
+	.eventsPhoto {
+		width: 100%;
+		.eventPicture {
+			width: 100%;
+		}
+	}
 	.eventsTitle {
 		padding-bottom: 50px;
 		.wrapper {
@@ -415,24 +421,32 @@ DonateSupporters Styling
 	.wrapper {
 		@include flexboxColumn;
 		min-width: 90%;
+		max-width: 90%;
 		// background: grey;
 		.supportersContainer {
+			max-width: 100%;
 			margin-top: 55px;
 			// background: lightblue;
 			@include flexboxColumn;
-
+			.button {
+				// margin-bottom: 25px;
+			}
 			.supportersList {
+				overflow: auto;
 				// background: lighten($darkBlue, 80);
 				// background: $darkGrey;
 				height: 60vh;
-				width: 100%;
+				max-width: 100%;
 				@include flexboxColumn;
 				@include flexWrapWrap;
 				// @include alignContentFlexStart;
 				// @include justifyContentCenter;
 				@include alignItemsCenter;
-				padding: 0 30px 30px 30px;
+				// padding: 30px;
+				flex-shrink: 1;
 				p {
+				// 	font-size: 2vw;
+					// flex-shrink: 1;
 					padding: 7px 20px;
 					font-weight: 700;
 					color: $darkGrey;
@@ -510,12 +524,36 @@ Gallery Styling
 ====================================
 */
 
+.gallery {
+	margin-top: 95px;
+	h2 {
+		color: $darkBlue;
+		margin-bottom: 95px;
+	}
+	.galleryWrapper {
+		max-width: 90%;
+		@include flexboxColumn;
+		@include alignItemsCenter;
+		.featuredImage {
+			background: lightblue;
+			width: 64%;
+			margin: 0 auto;
+			height: 350px;
+			background-position: 50%;
+			background-attachment: cover;
+		}
+	}
+}
+
 .grid {
 	// background: green;
+	padding-top: 25px;
 	width: 65%;
 	margin: 0 auto;
 	ul {
 		list-style: none;
+		padding: 0;
+		margin: 0;
 		li {
 			padding: 0;
 		}
@@ -524,7 +562,7 @@ Gallery Styling
 
 .grid-sizer, .grid-item {
 	width: 32%;
-	margin: 0.5%;
+	margin: 0.6%;
 }
 
 .grid-item {
@@ -588,3 +626,5 @@ Contact Styling
 Footer Styling
 ====================================
 */
+
+

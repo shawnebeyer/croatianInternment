@@ -21,8 +21,8 @@
  </header>
  <main class="container eventsContainer">
    <section class="eventsPhoto">
-     <?php $eventPicture = get_field('event_picture'); ?>
-    <img class="eventPicture" src="<?php echo $eventPicture['sizes']['large'] ?>">
+      <?php $eventPicture = get_field('event_picture'); ?>
+     <img class="eventPicture" src="<?php echo $eventPicture['sizes']['large'] ?>">
    </section>
    <section class="eventsTitle">
     <div class="wrapper">
