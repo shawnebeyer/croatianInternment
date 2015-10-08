@@ -7,7 +7,7 @@
     <div class="content">
     		<?php get_template_part( 'loop', 'index' );	?>
     </div> <!--/.content -->
-
+	<p>hi, im a blog!</p>
     <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->

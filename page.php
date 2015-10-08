@@ -1,9 +1,9 @@
 <?php get_header();  ?>
 
-<div class="main">
-  <div class="container">
+<div class="blogMain">
+  <div class="blogContainer">
 
-    <div class="content">
+    <div class="blogContent">
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 

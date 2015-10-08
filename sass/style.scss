@@ -23,6 +23,20 @@ Default Styling
 ====================================
 */
 
+.blogContent {
+	background: black;
+}
+
+.entry-content {
+	p {
+		color: $darkGrey;
+	}
+}
+
+.entry-title {
+	color: blueviolet;
+}
+
 
 img {
 	max-width: 100%;

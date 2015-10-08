@@ -26,7 +26,7 @@
  	</section>
  	<section class="contactTitle">
  		<div class="wrapper">
- 			<h2>Contact us.</h2>
+ 			<h2><span class="underline">Contact us.</span></h2>
  		</div>
  	</section>
  	<section class="contactContent">
