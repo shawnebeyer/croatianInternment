@@ -102,7 +102,7 @@ Home Styling
 ====================================
 */
 header {
-	background-color: $darkBlue;
+	background-color: $blueOne;
 }
 .homeContainer {
 	// @include flexboxColumn;
@@ -112,7 +112,7 @@ header {
 		// position: relative;
 		.homeHeader {
 			height: 25vh;
-			background: 50% 100%;
+			background: 50% 50%;
 			background-size: contain;
 			background-repeat: no-repeat;
 			// max-width: 100%;
@@ -120,9 +120,9 @@ header {
 			// background-position: 50%;
 		}
 		.homeMainContent {
-			// background: grey;
+			background-color: $blueThree;
 			flex: 1;
-			background: 40% fixed;
+			background: 50% 0 fixed;
 			@include flexboxColumn;
 			@include alignItemsCenter;
 			@include alignContentCenter;
@@ -137,12 +137,17 @@ header {
 				// @include justifyContentCenter;
 				// height: 100%;
 				.homeQuote {
-					// background: rgba(0, 0, 0, 0.4);
-					padding: 10px;
+					// background: rgba(0, 0, 0, 0.9);
+					background: rgba(49,49,49,0.5);
+					padding: 25px;
+					border-radius: 3px;
+					width: 76%;
+					margin: 0 auto;
 					p {
-						font-size: 19px;
+						font-size: 18px;
 						color: $white;
-						font-weight: 300;
+						font-weight: 100;
+						line-height: 1.5;
 						// color: $blueTwo;
 					}
 				}
@@ -435,7 +440,7 @@ DonateSupporters Styling
 				overflow: auto;
 				// background: lighten($darkBlue, 80);
 				// background: $darkGrey;
-				height: 60vh;
+				height: 50vh;
 				max-width: 100%;
 				@include flexboxColumn;
 				@include flexWrapWrap;

@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 <main class="container homeContainer">
 	<section id="homeMain" class="homeMain">
-		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: rgba( 34, 44, 62,1)">
+		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: rgba(22, 34, 55, 1)">
 		</header>
 		<div class="homeMainContent" style="background-image: url('<?php the_field('background_picture'); ?>'); ">
 			<div class="wrapper">
