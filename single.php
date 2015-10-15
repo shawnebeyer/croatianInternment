@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <header id="navContainer" class="navContainer fixedNavContainer">
   <div class="navLogo">
-    <p><i class="fa fa-phone"></i> 416 555 1212</p>
+    <p>THE CROATIAN CANADIAN</p>
+    <!-- <p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p> -->
+    <p>INTERNMENT PROJECT</p>
   </div>
   <nav class="mainNav">
     <?php wp_nav_menu( array(
@@ -15,45 +17,49 @@
     <!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
   </div>
 </header>
-<p>Hey Im editing single.php!</p>
-<div class="main">
-  <div class="container">
+<div class="main postMain">
+  <div class="container wrapper">
 
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+  
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <?php $thumb_id = get_post_thumbnail_id();
+          $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+          $thumb_url = $thumb_url_array[0];
+          ?>
 
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
-
+          <div class="featuredImage" style="background-image: url(<?php echo $thumb_url ?>)">
+          </div>
+          <p class="postDate"><?php the_date(); ?></p>
+          <h1 class="entry-title underline"><?php the_title(); ?></h1>
           <div class="entry-content">
-            <?php the_content(); ?>
+            <div class="postContent">
+              <div class="postPdf">
+                <p>download pdf of this post</p>
+                <?php if (function_exists("wpptopdfenh_display_icon")) echo wpptopdfenh_display_icon();?>
+              </div>
+              <?php the_content(); ?>
+            </div>
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',
               'after' => '</div>'
             )); ?>
           </div><!-- .entry-content -->
-
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
+          <div class="entry-meta">
+            <?php hackeryou_posted_on(); ?>
+          </div><!-- .entry-meta -->
         </div><!-- #post-## -->
+        <?php get_sidebar(); ?>
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
           <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
         </div><!-- #nav-below -->
-
         <?php comments_template( '', true ); ?>
 
       <?php endwhile; // end of the loop. ?>
 
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
