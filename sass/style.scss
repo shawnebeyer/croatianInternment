@@ -23,21 +23,6 @@ Default Styling
 ====================================
 */
 
-.blogContent {
-	background: black;
-}
-
-.entry-content {
-	p {
-		color: $darkGrey;
-	}
-}
-
-.entry-title {
-	color: blueviolet;
-}
-
-
 img {
 	max-width: 100%;
 }
@@ -56,7 +41,7 @@ body {
 }
 
 .donateContainer, .storyContainer {
-	padding-top: 55px;
+	padding-top: 65px;
 }
 
 .full {
@@ -107,11 +92,11 @@ header {
 .homeContainer {
 	// @include flexboxColumn;
 	.homeMain {
-		height: calc(100vh - 55px);
+		height: calc(100vh - 65px);
 		@include flexboxColumn;
 		// position: relative;
 		.homeHeader {
-			height: 25vh;
+			height: 18vh;
 			background: 50% 50%;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -162,7 +147,10 @@ section.important, section.pioneers {
 
 .pioneers {
 	height: 100vh;
-	background: $blueTwo;
+	background: $blueThree;
+	// background: #1B2D50;
+	// background: #3A539B;
+	// background: #213C63;
 	.content {
 		.wrapper {
 			@include flexboxColumn;
@@ -257,6 +245,121 @@ News Styling
 ====================================
 */
 
+.newsMain {
+	margin-top: 65px;
+	padding-top: 100px;
+	background: $darkGrey;
+	min-height: 100vh;
+	.wrapper {
+		max-width: 88%;
+	}
+	.underline:after {
+		border: 3px solid $silver;
+	}
+}
+
+.blogContent {
+	// background: black;
+	margin-top: 100px;
+	article {
+		@include flexboxRow;
+		margin-bottom: 35px;
+		background: $silver;
+		min-height: 450px;
+		.blogHalf {
+			height: 450px;
+			flex: 1;
+			width: 50%;
+
+		}
+		.blogText {
+			@include flexboxColumn;
+			@include alignContentCenter;
+			@include alignItemsCenter;
+			@include justifyContentCenter;
+			background: lighten($darkGrey, 70);
+			@include transition;
+			// padding: 25px;
+			&:hover {
+				background: $white;
+			}
+			.postDate {
+				color: lighten($darkGrey, 20);
+				text-transform: uppercase;
+			}
+			.entry-title {
+				line-height: 1.9;
+				a {
+					color: lighten($darkGrey, 10);
+					font-family: $mainFont;
+					font-size: 30px;
+					text-transform: uppercase;
+					font-weight: 700;
+					letter-spacing: 4px;
+					&:hover {
+						color: black;
+					}
+				}
+			}
+			.underline {
+				padding-top: 0;
+				&:after {
+					border: 3px solid lighten($darkGrey, 20);
+				}
+
+			}
+			.postExcerpt {
+				padding: 20px 10.5%;
+				font-family: $lato;
+				font-weight: 300;
+				p {
+					color: $darkGrey;
+					font-size: 18px;
+					a {
+						display: block;
+						padding-top: 25px;
+						text-transform: uppercase;
+						font-size: 15px;
+						font-family: $mainFont;
+						color: lighten($darkGrey, 20);
+						&:hover {
+							color: black;
+						}
+					}
+				}
+			}
+		}
+		.blogImage {
+			background: #888888;
+
+			// background-size: 100%;
+			background-position: center;
+			// background-attachment: fixed;
+			background-size: 100%;
+			// background-size: cover;
+			background-repeat: no-repeat;
+			transition: all .5s ease-in-out;
+			&:hover {
+				background-size: 110%;
+				position: relative;
+			}
+			img {
+				// min-width: 100%;
+			}
+		}
+	}
+}
+
+.featuredImageLink {
+	width: 50%;
+}
+
+.entry-content {
+	p {
+		color: $darkGrey;
+	}
+}
+
 /*
 ====================================
 Events Styling
@@ -264,7 +367,7 @@ Events Styling
 */
 
 .eventsContainer {
-	padding-top: 95px;
+	padding-top: 105px;
 	background: $white;
 	.eventsPhoto {
 		width: 100%;
@@ -383,7 +486,7 @@ DonateSupporters Styling
 
 .contributeInnerContainer {
 	// background: green;
-	margin-top: 55px;
+	margin-top: 65px;
 	min-width: 100%;
 	.typesOfContributersTitle {
 		// background: $blueOne;
@@ -423,6 +526,7 @@ DonateSupporters Styling
 }
 
 .supporters {
+	min-height: 100vh;
 	.wrapper {
 		@include flexboxColumn;
 		min-width: 90%;
@@ -492,6 +596,7 @@ Story Styling
 
 .storyContainer {
 	@include flexboxColumn;
+	margin-top: 35px;
 	padding-bottom: 50px;
 	.storyPhoto {
 		margin: 0 auto;
@@ -506,7 +611,7 @@ Story Styling
 		}
 	}
 	.storyContent {
-		margin-top: 55px;
+		margin-top: 65px;
 		p {
 			color: $darkBlue;
 			font-weight: 300;
@@ -530,10 +635,10 @@ Gallery Styling
 */
 
 .gallery {
-	margin-top: 95px;
+	margin-top: 105px;
 	h2 {
 		color: $darkBlue;
-		margin-bottom: 95px;
+		margin-bottom: 105px;
 	}
 	.galleryWrapper {
 		max-width: 90%;
@@ -587,7 +692,7 @@ Contact Styling
 
 .contactContainer {
 	@include flexboxColumn;
-	padding: 55px 0 50px 0;
+	padding: 95px 0 60px 0;
 	.contactPhoto {
 		margin: 0 auto;
 		padding-top: 50px;
@@ -601,7 +706,7 @@ Contact Styling
 		}
 	}
 	.contactContent {
-		margin-top: 55px;
+		margin-top: 65px;
 		p {
 			color: $darkBlue;
 			font-weight: 300;

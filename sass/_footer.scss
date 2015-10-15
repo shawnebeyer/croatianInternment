@@ -1,6 +1,6 @@
 footer {
 	clear: both;
-	background: $darkBlue;
+	background: $darkestGrey;
 	height: 80px;
 	// position: absolute;
 	bottom: 0;
@@ -16,7 +16,10 @@ footer {
 		@include alignContentCenter;
 		@include alignItemsCenter;
 		p {
-			font-weight: 300;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: $lightGrey;
+			font-size: 14px;
 		}
 	}
 }

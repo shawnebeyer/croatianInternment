@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <p>&copy; The Croatian Canadian Internment Project <?php echo date('Y'); ?></p>
+    <p>The Croatian Canadian Internment Project &copy; <?php echo date('Y'); ?></p>
   </div>
 </footer>
 

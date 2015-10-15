@@ -5,7 +5,9 @@
  <?php get_header(); ?>
  <header id="navContainer" class="navContainer fixedNavContainer">
  	<div class="navLogo">
-  		<p><i class="fa fa-phone"></i> 416 555 1212</p>
+ 		<p>THE CROATIAN CANADIAN</p>
+ 		<!-- <p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p> -->
+ 		<p>INTERNMENT PROJECT</p>
  	</div>
  	<nav class="mainNav">
   		<?php wp_nav_menu( array(

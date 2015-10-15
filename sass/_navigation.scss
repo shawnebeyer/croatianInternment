@@ -7,20 +7,22 @@ ul.menu {
 		padding: 10px;
 		a {
 			font-family: $lato;
-			color: $offWhite;
+			// color: $lightGrey;
+			color: $white;
 			// text-transform: uppercase;
 			letter-spacing: 2px;
 			font-weight: 300;
 			padding: 2px 0;
 			// padding-left: 4px;
-			border-top: 4px solid $darkBlue;
+			// border-top: 4px solid $darkBlue;
 			// border-bottom: 4px solid $darkBlue;
 			// border-left: 3px solid $darkBlue;
 			&:hover {
 				// border-left: 3px solid $darkGrey;
-				border-top: 4px solid $darkGrey;
+				// border-top: 4px solid $darkGrey;
 				// border-bottom: 4px solid $darkGrey;
-				// color: $darkGrey;
+				// color: $white;
+				color: $lightGrey;
 			}
 		}
 	}
@@ -28,7 +30,7 @@ ul.menu {
 
 .navContainer {
 	background: $darkBlue;
-	height: 55px;
+	height: 65px;
 	z-index: 999;
 	// position: absolute;
 	bottom: 0;
@@ -37,7 +39,16 @@ ul.menu {
 	@include flexboxRow;
 	@include justifyContentSpaceBetween;
 	padding: 0 90px;
-	.navLogo, .mainNav, .navSocial {
+	.navLogo {
+		@include flexboxColumn;
+		@include justifyContentCenter;
+		p {
+			font-weight: 300;
+			text-align: left;
+			font-size: 14px;
+		}
+	}
+	.mainNav, .navSocial {
 		@include flexboxRow;
 		@include alignItemsCenter;
 		p, .phone {
@@ -51,12 +62,13 @@ ul.menu {
 	.navSocial a {
 		margin-left: 10px;
 		padding: 6px 10px;
-		background: $darkBlue;
+		// background: $darkBlue;
 		border-radius: 5px;
+		color: white;
 		&:hover {
-			background: $darkGrey;
+			// background: $darkGrey;
 			border-radius: 5px;
-			color: $offWhite;
+			color: $lightGrey;
 		}
 	}
 	.mainNav {

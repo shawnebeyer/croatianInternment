@@ -15,30 +15,33 @@
 <?php // if there are posts, Start the Loop. ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title">
-        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          <?php the_title(); ?>
-          <?php the_post_thumbnail(); ?>
-          <?php the_date(); ?>
-        </a>
-      </h2>
-
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<section class="blogHalf blogText">
+			<p class="postDate"><?php the_date(); ?></p>
+			<h3 class="entry-title underline">
+			<!-- <h2><span class="underline">An Injustice to our Pioneers</span></h2> -->
+				<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+				    <?php the_title(); ?>
+				</a>
+			</h3>
+			<span class="postExcerpt"><?php the_excerpt(); ?></span>
 			<section class="entry-content">
-				
 				<?php wp_link_pages( array(
-          'before' => '<div class="page-link"> Pages:',
-          'after' => '</div>'
-        )); ?>
+				    'before' => '<div class="page-link"> Pages:',
+				    'after' => '</div>'
+				    )); ?>
 			</section><!-- .entry-content -->
+		</section>
+		<?php $thumb_id = get_post_thumbnail_id();
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+		$thumb_url = $thumb_url_array[0];
+		?>
 
-		
-
-		</article><!-- #post-## -->
-
-		<?php comments_template( '', true ); ?>
-
+		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark" class="blogHalf blogImage" style="background-image: url(<?php echo $thumb_url ?>)">
+			
+		</a>
+	</article><!-- #post-## -->
+<?php comments_template( '', true ); ?>
 
 <?php endwhile; // End the loop. Whew. ?>
 

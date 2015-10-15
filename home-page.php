@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 <main class="container homeContainer">
 	<section id="homeMain" class="homeMain">
-		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: rgba(22, 34, 55, 1)">
+		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: #0F212E">
 		</header>
 		<div class="homeMainContent" style="background-image: url('<?php the_field('background_picture'); ?>'); ">
 			<div class="wrapper">
@@ -17,7 +17,9 @@
 	</section>
 	<header id="navContainer" class="navContainer">
 		<div class="navLogo">
-			<p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p>
+			<p>THE CROATIAN CANADIAN</p>
+			<!-- <p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p> -->
+			<p>INTERNMENT PROJECT</p>
 		</div>
 		<nav class="mainNav">
 			<?php wp_nav_menu( array(

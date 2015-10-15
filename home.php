@@ -2,7 +2,9 @@
 <?php get_header(); ?>
 <header id="navContainer" class="navContainer fixedNavContainer">
 	<div class="navLogo">
- 		<p><i class="fa fa-phone"></i> 416 555 1212</p>
+		<p>THE CROATIAN CANADIAN</p>
+		<!-- <p><i class="fa fa-phone"></i> <span class="phone">647-290-8337</span></p> -->
+		<p>INTERNMENT PROJECT</p>
 	</div>
 	<nav class="mainNav">
  		<?php wp_nav_menu( array(
@@ -16,16 +18,14 @@
  		<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
 	</div>
 </header>
-<div class="main">
-  <div class="container">
-
-    <div class="blogContent">
-        <?php get_template_part( 'loop', 'index' ); ?>
-    </div> <!--/.content -->
-  <p>hi, im a blog!</p>
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
-</div> <!-- /.main -->
+<main class="newsMain">
+	<div class="wrapper">
+		<h2><span class="underline">News and Media Releases</span></h2>
+    	<div class="blogContent">
+        	<?php get_template_part( 'loop', 'index' ); ?>
+    	</div> <!--/.content -->
+    	<!-- <?php get_sidebar(); ?> -->
+	</div>
+</main> <!-- /.main -->
 
 <?php get_footer(); ?>
