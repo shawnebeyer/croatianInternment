@@ -36,7 +36,7 @@
           <div class="entry-content">
             <div class="postContent">
               <div class="postPdf">
-                <p>download pdf of this post</p>
+                <span>download pdf of this post</span>
                 <?php if (function_exists("wpptopdfenh_display_icon")) echo wpptopdfenh_display_icon();?>
               </div>
               <?php the_content(); ?>
@@ -52,8 +52,14 @@
         </div><!-- #post-## -->
         <?php get_sidebar(); ?>
         <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
+          <div class="postNavPrevious">
+            <p class="nav-previous-text">Previous Post</p>
+            <p class="nav-previous"><?php previous_post_link('%link', '%title'); ?></p>
+          </div>
+          <div class="postNavNext">
+            <p class="nav-next-text">Next Post</p>
+            <p class="nav-next"><?php next_post_link('%link', '%title'); ?></p>
+          </div>
         </div><!-- #nav-below -->
         <?php comments_template( '', true ); ?>
 

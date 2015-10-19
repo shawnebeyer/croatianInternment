@@ -5,9 +5,9 @@
 <?php get_header(); ?>
 <main class="container homeContainer">
 	<section id="homeMain" class="homeMain">
-		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: #0F212E">
+		<header class="homeHeader" style="background-image: url('<?php the_field('logo'); ?>'); background-color: #0A0F1F">
 		</header>
-		<div class="homeMainContent" style="background-image: url('<?php the_field('background_picture'); ?>'); ">
+		<div class="homeMainContent" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<?php the_field('background_picture'); ?>'); ">
 			<div class="wrapper">
 				<article class="homeQuote">
 					<p class="quote"><?php the_field('quote'); ?></p>
@@ -31,6 +31,9 @@
 			<a href="#"><i class="fa fa-facebook"></i></a>
 			<a href="#"><i class="fa fa-envelope-o"></i></a>
 			<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
+		</div>
+		<div class="headerLine">
+			
 		</div>
 	</header>
 	<section id="pioneers" class="pioneers">

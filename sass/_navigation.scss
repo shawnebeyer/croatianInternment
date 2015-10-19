@@ -8,11 +8,12 @@ ul.menu {
 		a {
 			font-family: $lato;
 			// color: $lightGrey;
-			color: $white;
-			// text-transform: uppercase;
+			color: $lightGrey;
+			text-transform: uppercase;
 			letter-spacing: 2px;
-			font-weight: 300;
+			font-weight: 400;
 			padding: 2px 0;
+			font-size: 13px;
 			// padding-left: 4px;
 			// border-top: 4px solid $darkBlue;
 			// border-bottom: 4px solid $darkBlue;
@@ -22,14 +23,15 @@ ul.menu {
 				// border-top: 4px solid $darkGrey;
 				// border-bottom: 4px solid $darkGrey;
 				// color: $white;
-				color: $lightGrey;
+				color: $white;
 			}
 		}
 	}
 }
 
 .navContainer {
-	background: $darkBlue;
+	// background: $darkestGrey;
+	background: #080A17;
 	height: 65px;
 	z-index: 999;
 	// position: absolute;
@@ -43,14 +45,20 @@ ul.menu {
 		@include flexboxColumn;
 		@include justifyContentCenter;
 		p {
-			font-weight: 300;
+			color: $lightGrey;
+			font-weight: 400;
 			text-align: left;
 			font-size: 14px;
 		}
 	}
+	.mainNav {
+		@include justifyContentCenter;
+	}
+	.mainNav, .navSocial {
+		@include alignItemsCenter;
+	}
 	.mainNav, .navSocial {
 		@include flexboxRow;
-		@include alignItemsCenter;
 		p, .phone {
 			font-size: 16px;
 			font-weight: 100;
@@ -59,9 +67,12 @@ ul.menu {
 			padding-left: 10px;
 		}
 	}
+	.navSocial {
+		@include justifyContentFlexEnd;
+	}
 	.navSocial a {
-		margin-left: 10px;
-		padding: 6px 10px;
+		margin: 6px 0 6px 15px;
+		// padding: 6px 10px;
 		// background: $darkBlue;
 		border-radius: 5px;
 		color: white;
@@ -80,6 +91,14 @@ ul.menu {
 			padding: 0;
 		}
 	}
+}
+
+.navLogo, .navSocial {
+	width: 25%;
+}
+
+.mainNav {
+	width: 50%;
 }
 
 .fixedNavContainer {

@@ -34,9 +34,14 @@ h2, h3 {
 }
 
 h2 {
-	font-size: 4.5vw;
-	color: $white;
+	font-size: 4vw;
+	// color: $white;
 	line-height: 1.5;
+	font-family: $mainFont;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: lighten($darkGrey, 50);
 }
 
 h3 {
