@@ -31,7 +31,8 @@ ul.menu {
 
 .navContainer {
 	// background: $darkestGrey;
-	background: #080A17;
+	// background: #080A17;
+	background: darken($darkBlue, 7);
 	height: 65px;
 	z-index: 999;
 	// position: absolute;

@@ -45,20 +45,36 @@
 					</div>
 					<div class="typesOfContributors">
 						<article class="contributer contributerFriend">
-							<p><?php the_field('friend_title'); ?></p>
-							<p><?php the_field('friend_sub_fields'); ?></p>
+							<div class="contributerTop">
+								<p class="contributerTitle"><?php the_field('friend_title'); ?></p>
+							</div>
+							<div class="contributerBottom">
+								<p class="contributerContent"><?php the_field('friend_sub_fields'); ?></p>
+							</div>
 						</article>
 						<article class="contributer contributerGuarantor">
-							<p><?php the_field('guarantor_title'); ?></p>
-							<p><?php the_field('guarantor_sub_fields'); ?></p>
+							<div class="contributerTop">
+								<p class="contributerTitle"><?php the_field('guarantor_title'); ?></p>
+							</div>
+							<div class="contributerBottom">
+								<p class="contributerContent"><?php the_field('guarantor_sub_fields'); ?></p>
+							</div>
 						</article>
 						<article class="contributer contributerGuardian">
-							<p><?php the_field('guardian_title'); ?></p>
-							<p><?php the_field('guardian_sub_fields'); ?></p>
+							<div class="contributerTop">
+								<p class="contributerTitle"><?php the_field('guardian_title'); ?></p>
+							</div>
+							<div class="contributerBottom">
+								<p class="contributerContent"><?php the_field('guardian_sub_fields'); ?></p>
+							</div>
 						</article>
 						<article class="contributer contributerBenefactor">
-							<p><?php the_field('benefactor_title'); ?></p>
-							<p><?php the_field('benefactor_sub_fields'); ?></p>
+							<div class="contributerTop">
+								<p class="contributerTitle"><?php the_field('benefactor_title'); ?></p>
+							</div>
+							<div class="contributerBottom">
+								<p class="contributerContent"><?php the_field('benefactor_sub_fields'); ?></p>
+							</div>
 						</article>
 					</div>
 				</section>
