@@ -14,7 +14,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^1.11.2",
     "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.0.4",
+    "gulp-sass": "^2.1.0",
     "jshint-stylish": "^2.0.1"
   }
 }

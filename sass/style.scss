@@ -15,6 +15,7 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'mediaQueries';
 // @import 'tribe-events';
 
 /*
@@ -964,6 +965,8 @@ Gallery Styling
 	}
 	.galleryWrapper {
 		max-width: 90%;
+		min-width: 90%;
+		// width: 90%;
 		@include flexboxColumn;
 		@include alignItemsCenter;
 		.featuredImage {

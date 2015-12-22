@@ -28,7 +28,7 @@
 	</section>
 	<section class="storyTitle">
 		<div class="wrapper">
-			<h2><span class="underline">Tell us your story.</span></h2>
+			<h2><span class="underline">Tell us your story</span></h2>
 		</div>
 	</section>
 	<section class="storyContent">
